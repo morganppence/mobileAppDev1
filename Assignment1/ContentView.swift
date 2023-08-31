@@ -15,6 +15,12 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
+    
+                
+            Text("Hello, world!")
+                .fontWeight(.bold)
+            Text("Welcome to my first Xcode")
+                .foregroundColor(.green)
             
             VStack{
                 Text("Hello, world!")

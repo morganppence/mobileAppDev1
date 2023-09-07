@@ -9,18 +9,14 @@ import SwiftUI
 
 
 struct ContentView: View {
+    
+    @State var isOn: Bool = false
+    
+
     var body: some View {
         ZStack{
             LinearGradient(colors: [.green,.white], startPoint: .topLeading, endPoint: .bottomTrailing)
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-    
-                
-            Text("Hello, world!")
-                .fontWeight(.bold)
-            Text("Welcome to my first Xcode")
-                .foregroundColor(.green)
+            
             
             VStack{
                 Text("Hello, world!")
@@ -34,11 +30,16 @@ struct ContentView: View {
                     .clipShape(Circle())
                     .aspectRatio(contentMode: .fit)
                 
+                Toggle("Would you like to opt in to my app?", isOn: $isOn)
+                
             }
             .padding()
             .background(.ultraThinMaterial, in:RoundedRectangle(cornerRadius: 20, style:.continuous))
+            
         }
+        
         .edgesIgnoringSafeArea(.all)
+        
     }
     
 }

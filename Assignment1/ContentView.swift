@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Assignment1
+//  Assignment2 - Updates to assignment 1
 //
 //  Created by Morgan Pence on 8/29/23.
 // used help from Youtube Video: "Easy SwiftUI Animation Tutorial with 3 Examples" by Logan Koshenka
